@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome OS API Demo",
+  "version": "1.0",
+  "description": "A beautiful demo of Chrome OS Enterprise and System APIs",
+  "kiosk_enabled": true,
+  "kiosk_only": true,
+  "permissions": [
+    "system.storage",
+    "system.display",
+    "system.memory",
+    "enterprise.hardwarePlatform",
+    "enterprise.deviceAttributes",
+    "enterprise.networkingAttributes",
+    "system.cpu",
+    "management",
+    "proxy"
+  ],
+  "icons": {
+    "16": "favicon.png",
+    "48": "favicon.png",
+    "128": "favicon.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  }
+} 
