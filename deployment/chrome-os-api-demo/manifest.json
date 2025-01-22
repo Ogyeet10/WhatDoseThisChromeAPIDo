@@ -1,3 +1,28 @@
 {
-  "update_url": "https://raw.githubusercontent.com/Ogyeet10/WhatDoseThisChromeAPIDo/main/deployment/updates.xml"
+  "manifest_version": 2,
+  "name": "Chrome OS API Demo",
+  "version": "2024.01.21",
+  "description": "A beautiful demo application that showcases various Chrome OS system and enterprise APIs",
+  "kiosk_only": true,
+  "permissions": [
+    "system.cpu",
+    "system.memory",
+    "system.storage",
+    "system.display",
+    "enterprise.hardwarePlatform",
+    "enterprise.deviceAttributes",
+    "enterprise.networkingAttributes"
+  ],
+  "update_url": "https://raw.githubusercontent.com/Ogyeet10/WhatDoseThisChromeAPIDo/main/deployment/updates.xml",
+  "app": {
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 } 
